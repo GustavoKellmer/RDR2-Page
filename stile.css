@@ -1,0 +1,149 @@
+html, body {
+  height: 100%;   /* Faz com que HTML e body ocupem 100% da altura da janela */
+  margin: 0;      /* Remove a margem padrão do navegador */
+  padding: 0;     /* Remove o espaçamento interno padrão */
+}
+
+.imagemcentalizada {
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;     /* Centraliza o conteúdo verticalmente */
+  display: flex;           /* Define o container como flexbox para permitir alinhamento */
+}
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .imagemcentalizada img {
+    width: 100%;       /* Continua ocupando toda a largura */
+    height: auto;      /* Altura automática para não distorcer */
+    max-height: 150px; /* Limita a altura no celular */
+  }
+}
+
+body {
+  background-image: url(1000002678.png); /* Define a imagem de fundo da página */
+  background-size: cover;                /* Ajusta a imagem para cobrir toda a tela */
+  background-repeat: no-repeat;          /* Evita repetição da imagem */
+  background-position: center;           /* Centraliza a imagem no fundo */
+  background-attachment: fixed;          /* Fixa a imagem ao fundo, mesmo ao rolar a página */
+  margin: 0;                             /* Remove margens extras do body */
+  padding: 0;                            /* Remove espaçamento interno do body */
+}
+
+/* Estilo geral do card */
+.card {
+  background-color: #000;             /* Fundo preto para todo o card */
+  color: #fff;                        /* Texto branco em todo o card */
+  border-radius: 10px;                /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra escura para dar profundidade */
+  overflow: hidden;                   /* Esconde conteúdo que ultrapassar os limites do card */
+  min-height: 400px;                  /* Define altura mínima do card */
+}
+
+/* Imagem do topo do card */
+.card-img-top {
+  width: 100%;                        /* Imagem ocupa toda a largura do card */
+  height: 200px;                      /* Altura fixa da imagem */
+  object-fit: cover;                  /* Ajusta a imagem para preencher sem distorcer */
+  object-position: center;            /* Centraliza a imagem dentro do espaço */
+  border-top-left-radius: 10px;       /* Bordas arredondadas no canto superior esquerdo */
+  border-top-right-radius: 10px;      /* Bordas arredondadas no canto superior direito */
+}
+
+/* Área de conteúdo do card */
+.card-body {
+  background-color: #000;             /* Fundo preto também na área de texto */
+  color: #fff;                        /* Texto branco */
+  padding: 20px;                      /* Espaçamento interno */
+  display: flex;                      /* Define layout flexível */
+  flex-direction: column;             /* Organiza elementos em coluna */
+  justify-content: space-between;     /* Distribui espaço entre os elementos */
+  height: 180px;                      /* Define altura fixa da área de conteúdo */
+}
+
+/* Título do card (ex: MAPA, PERSONAGENS) */
+.card-title {
+  color: #ffffff;                     /* Branco puro para o título */
+  font-weight: bold;                  /* Negrito para destacar */
+  font-size: 1.25rem;                 /* Tamanho maior para destaque */
+  margin-bottom: 10px;                /* Espaço abaixo do título */
+}
+
+/* Texto do card */
+.card-text {
+  color: #ffffff;                     /* Branco puro para o texto */
+  font-size: 1rem;                    /* Tamanho padrão de texto */
+}
+
+/* Links dentro do card */
+.card-link {
+  color: #ffffff;                     /* Link branco */
+  text-decoration: underline;         /* Sublinhado para destacar que é link */
+}
+
+/* Espaçamento entre os cards */
+.card-group-custom {
+  row-gap: 50px;                      /* Espaçamento vertical entre os cards */
+  column-gap: 50px;                   /* Espaçamento horizontal entre os cards */
+}
+
+ 
+
+    
+    /* ===== Navbar ===== */
+    .navbar {
+      border-bottom: 2px solid #ff4655; /* Linha vermelha abaixo da barra de navegação */
+    }
+    .geek-logo {
+      font-size: 1.5rem; /* Aumenta o tamanho do texto GeekIguaçu */
+      font-weight: bold; /* Deixa em negrito */
+      color: #ff4655 !important; /* Força a cor vermelha */
+      text-shadow: 0 0 5px #030303; /* Adiciona brilho vermelho */
+    }
+    .nav-link {
+      color: #ddd !important; /* Links ficam cinza claro */
+      transition: color 0.3s; /* Suaviza a mudança de cor */
+    }
+    .nav-link:hover {
+      color: #ff4655 !important; /* Links ficam vermelhos ao passar o mouse */
+    }
+
+    /*  Cards  */
+    .card {
+      background-color: #1e1e1e; /* Fundo escuro dos cards */
+      color: #ddd; /* Texto claro */
+      margin-bottom: 20px; /* Espaço entre os cards */
+      border: 1px solid #333; /* Borda discreta cinza escura */
+      transition: transform 0.3s; /* Suaviza o efeito de zoom */
+    }
+    .card:hover {
+      transform: scale(1.05); /* Dá zoom no card ao passar o mouse */
+    }
+    .card-title {
+      color: #ff4655; /* Título dos cards em vermelho */
+    }
+
+    /* Formulário de contato  */
+    .contact-form {
+      background-color: #1e1e1e; /* Fundo escuro */
+      border: 1px solid #333; /* Borda discreta */
+    }
+    .contact-form label {
+      color: #ff4655; /*  (Nome, Email, Tipo) em vermelho */
+    }
+    .contact-form .btn {
+      background-color: #ff4655; /* Botão vermelho */
+      border: none; /* Remove borda padrão */
+    }
+    .contact-form .btn:hover {
+      background-color: #e63946; /* Botão fica vermelho mais escuro ao passar o mouse */
+    }
+
+    /*  Rodapé  */
+    .footer {
+      border-top: 2px solid #ff4655; /* Linha vermelha acima do rodapé */
+    }
+    .footer p {
+      margin: 0; /* Remove margens extras */
+      font-size: 0.9rem; /* Texto menor e discreto */
+    }
+
+

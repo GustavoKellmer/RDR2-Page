@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeekIguaçu - Red Dead Redemption 2</title>
+  <link rel="stylesheet" href="stile.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== Cabeçalho / Menu de Navegação ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Navbar escura e responsiva -->
+  <div class="container-fluid">
+    <a class="navbar-brand geek-logo" href="#">GeekIguaçu</a> <!-- Nome GeekIguaçu em destaque -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <!-- Botão que aparece em telas pequenas -->
+      <span class="navbar-toggler-icon"></span> <!-- Ícone do menu hamburguer -->
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Links alinhados à direita -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html ">Início</a></li> <!-- Link Início -->
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li> <!-- Link que leva ao formulário -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="imagemcentalizada">
+<a href="trabalho.html">
+<img  src="Red_Dead_Redemption_2_Logo.png" alt="" width="100%" height="200px">
+ </a>
+</div> 
+
+
+<!-- Cards -->
+<div class="container mt-5">
+  <div class="row justify-content-center card-group-custom">
+    <!-- Card 1 -->
+    <div class="col-md-5">
+      <div class="card">
+        <img src="Copilot_20251104_121602.png" class="card-img-top" alt="capitulos">
+        <div class="card-body">
+          <h5 class="card-title">CAPÍTULOS DA HISTÓRIA</h5>
+          <p class="card-text">A jornada da gangue</p>
+          <a href="https://reddead.fandom.com/pt-br/wiki/Miss%C3%B5es_em_Redemption_II" class="card-link">TODOS OS CAPÍTULOS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-5">
+      <div class="card">
+        <img src="Copilot_20251104_115453.png" class="card-img-top" alt="Mapa">
+        <div class="card-body">
+          <h5 class="card-title">MAPA</h5>
+          <p class="card-text">Alguns dos principais locais</p>
+          <a href="https://rdr2map.com/" class="card-link">MAPA COMPLETO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-5">
+      <div class="card">
+        <img src="Copilot_20251104_122501.png" class="card-img-top" alt="Personagens">
+        <div class="card-body">
+          <h5 class="card-title">PERSONAGENS</h5>
+          <p class="card-text">Alguns dos principais</p>
+          <a href="https://reddead.fandom.com/pt-br/wiki/Personagens_em_Redemption_2" class="card-link">PERSONAGENS PRINCIPAIS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-5">
+      <div class="card">
+        <img src="Copilot_20251110_090527.png" class="card-img-top" alt="cavalo">
+        <div class="card-body">
+          <h5 class="card-title">CAVALOS</h5>
+          <p class="card-text">Alguns dos principais</p>
+          <a href="https://reddead.fandom.com/wiki/Horse#Red_Dead_Redemption" class="card-link">TODOS OS CAVALOS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ===== Formulário de Contato ===== -->
+<section id="contato" class="container mt-5 mb-5">
+  <h2 class="text-center text-light mb-4">Entre em Contato</h2> <!-- Título do formulário -->
+  <form class="contact-form p-4 rounded"> <!-- Formulário com fundo escuro -->
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label> <!-- Label Nome -->
+      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"> <!-- Campo de texto -->
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label> <!-- Label Email -->
+      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"> <!-- Campo de email -->
+    </div>
+    <div class="mb-3">
+      <label for="tipo" class="form-label">Tipo de mensagem</label> <!-- Label Tipo -->
+      <select class="form-select" id="tipo"> <!-- Select com opções -->
+        <option>Sugestão</option>
+        <option>Dúvida</option>
+        <option>Parceria</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Enviar</button> 
+   </form>
+   </section>
+
+<!-- Rodapé -->
+<footer class="footer bg-dark text-light text-center py-3">   <!-- py-3 adiciona padding vertical (espaço interno) -->
+  <p>Desenvolvido por Gustavo Kellmer Lorensini para o portal GeekIguaçu </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

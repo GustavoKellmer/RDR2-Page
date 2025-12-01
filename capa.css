@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;   /* Faz com que o HTML e o body ocupem 100% da altura da janela */
+  margin: 0;      /* Remove a margem padrão do navegador */
+  padding: 0;     /* Remove o espaçamento interno padrão */
+}
+
+.imagemcentalizada {
+  justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do container */
+  align-items: center;     /* Centraliza o conteúdo verticalmente dentro do container */
+  display: flex;           /* Define o container como flexbox para permitir alinhamento flexível */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .imagemcentalizada img {
+    width: 100%;       /* Continua ocupando toda a largura */
+    height: auto;      /* Altura automática para não distorcer */
+    max-height: 150px; /* Limita a altura no celular */
+  }
+}
+
+
+body {
+  background-image: url(1000002681.png); /* Define a imagem de fundo da página */
+  background-size: cover;                /* Ajusta a imagem para cobrir toda a tela */
+  background-repeat: no-repeat;          /* Evita repetição da imagem */
+  background-position: center;           /* Centraliza a imagem no fundo */
+  background-attachment: fixed;          /* Fixa a imagem ao fundo, mesmo ao rolar a página */
+}
+
+
+/*  Navbar  */
+    .navbar {
+      border-bottom: 2px solid #ff4655; /* Linha vermelha abaixo da barra de navegação */
+    }
+    .geek-logo {
+      font-size: 1.5rem; /* Aumenta o tamanho do texto GeekIguaçu */
+      font-weight: bold; /* Deixa em negrito */
+      color: #ff4655 !important; /* Força a cor vermelha */
+      text-shadow: 0 0 5px #030303; /* Adiciona brilho vermelho */
+    }
+    .nav-link {
+      color: #ddd !important; /* Links ficam cinza claro */
+      transition: color 0.3s; /* Suaviza a mudança de cor */
+    }
+    .nav-link:hover {
+      color: #ff4655 !important; /* Links ficam vermelhos ao passar o mouse */
+    }
+
+    
